@@ -1,10 +1,10 @@
 import React from "react";
-import './index.css';
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-   <div>
-    <h1 className="text-4xl">Test</h1>
+    <div>
+   <Navigation></Navigation>
    </div>
   );
 }
