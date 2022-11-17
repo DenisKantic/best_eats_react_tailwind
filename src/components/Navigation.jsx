@@ -32,6 +32,9 @@ const Navigation = () => {
             <BsFillCartFill size={20}></BsFillCartFill>
             <button className='ml-2 hidden sm:flex'>Cart</button>
         </div>
+    {/* menu selection overlay */}
+    <div className='bg-black/80 w-full fixed h-screen z-10 top-0 left-0'></div>
+
     </div>
   )
 }
