@@ -4,7 +4,7 @@ import {BsFillCartFill} from 'react-icons/bs'
 
 const Navigation = () => {
   return (
-    <div className='min-w-[95%]  max-w-[100%] mx-auto flex justify-between items-center bg-purple-400 p-3'>
+    <div className='max-w-[95%] mx-auto flex justify-between items-center p-3'>
 
         {/* left side */}
         <div className='flex items-center'>
@@ -21,7 +21,7 @@ const Navigation = () => {
 
         {/* input */}
         <div className='flex items-center bg-gray-200 px-2 rounded-full 
-                    xss:w-[90%] xs:w-[250px] sm:w-[400px] lg:w-[500px]
+                    xss:w-[90%] xs:w-[250px] sm:w-[400px] lg:w-[50%]
                     medium:w-[90%] mediumEnd:w-[90%] mx-2'> 
             <AiOutlineSearch className='cursor-pointer' size={20}></AiOutlineSearch>
             <input className='outline-none bg-transparent p-1 xss:w-[100%]' type="text" placeholder='Search here' />
