@@ -1,14 +1,22 @@
 import React from 'react'
-import {AiOutlineMenu, AiOutlineSearch  } from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineSearch,AiOutlineClose  } from 'react-icons/ai'
 import {BsFillCartFill} from 'react-icons/bs'
+import { useState } from 'react'
+
 
 const Navigation = () => {
+
+    const [nav,setNav] = useState(false);
+
+
   return (
     <div className='max-w-[95%] mx-auto flex justify-between items-center p-3'>
 
         {/* left side */}
         <div className='flex items-center'>
-        <AiOutlineMenu className='mx-2 cursor-pointer' size={20}></AiOutlineMenu>
+
+        <AiOutlineMenu className='mx-2 cursor-pointer' size={20} onClick={()=> setNav(!nav)}></AiOutlineMenu>
+        
         <h1 className='sm:text-3xl lg:text-xl flex'>Best <span className='font-bold'>Eats</span></h1>
         
         {/* button wrapper */}
@@ -32,6 +40,18 @@ const Navigation = () => {
             <BsFillCartFill size={20}></BsFillCartFill>
             <button className='ml-2 hidden sm:flex'>Cart</button>
         </div>
+    {/* menu selection overlay */}
+    <div className={ nav ? 'bg-black/80 w-full fixed h-screen z-10 top-0 left-0 duration-300' : 'fixed'}></div>
+
+
+    {/* menu drawer menu */}
+    <div className={nav ? 'bg-white w-[300px] fixed top-0 left-0 z-10 h-screen duration-300' : 'fixed left-[-100%] w-[-300px] top-0 duration-300'}>
+
+    <h1 className='sm:text-3xl lg:text-xl absolute top-4 left-4'>Best <span className='font-bold'>Eats</span></h1>
+    <AiOutlineClose className='absolute top-4 right-4 cursor-pointer' 
+    onClick={()=> setNav(!nav)}
+    size={30}></AiOutlineClose>
+    </div>
     </div>
   )
 }
