@@ -13,12 +13,12 @@ const Navigation = () => {
 
 
   return (
-    <div className='max-w-[95%] mx-auto flex justify-between items-center p-3'>
+    <div className='max-w-[90%] mx-auto flex justify-between items-center p-4'>
 
         {/* left side */}
         <div className='flex items-center'>
 
-        <AiOutlineMenu className='mx-2 cursor-pointer' size={20} onClick={()=> setNav(!nav)}></AiOutlineMenu>
+        <AiOutlineMenu className='mr-2 cursor-pointer' size={25} onClick={()=> setNav(!nav)}></AiOutlineMenu>
         
         <h1 className='sm:text-3xl lg:text-xl flex'>Best <span className='font-bold'>Eats</span></h1>
         
