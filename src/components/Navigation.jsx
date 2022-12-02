@@ -32,10 +32,10 @@ const Navigation = () => {
 
         {/* input */}
         <div className='flex items-center bg-gray-200 px-2 rounded-full 
-                    xss:w-[90%] xs:w-[250px] sm:w-[400px] lg:w-[50%]
+                    xxs:w-[90%] xs:w-[250px] sm:w-[400px] lg:w-[50%]
                     medium:w-[90%] mediumEnd:w-[90%] mx-2'> 
             <AiOutlineSearch className='cursor-pointer' size={20}></AiOutlineSearch>
-            <input className='outline-none bg-transparent p-1 xss:w-[100%]' type="text" placeholder='Search here' />
+            <input className='outline-none bg-transparent p-1 xxs:w-[100%]' type="text" placeholder='Search here' />
         </div>
 
         {/* cart button */}
@@ -55,12 +55,12 @@ const Navigation = () => {
                     onClick={()=> setNav(!nav)}  size={30}></AiOutlineClose>
 
     <ul className='flex flex-col p-4 mt-[50px]'>
-      <li className='flex py-4 items-center'><TbTruckDelivery className='mr-4' size={25}></TbTruckDelivery><span className='text-lg'>Orders</span> </li>
-      <li className='flex py-4 items-center'><AiFillHeart className='mr-4' size={25}></AiFillHeart><span className='text-lg'>Favorites</span></li>
-      <li className='flex py-4 items-center'><FaWallet className='mr-4' size={25}></FaWallet><span className='text-lg'>Wallet</span></li>
-      <li className='flex py-4 items-center'><AiFillQuestionCircle className='mr-4' size={25}></AiFillQuestionCircle><span className='text-lg'>Help</span></li>
-      <li className='flex py-4 items-center'><ImPriceTag className='mr-4' size={25}></ImPriceTag><span className='text-lg'>Promotions</span></li>
-      <li className='flex py-4 items-center'><FaUserFriends className='mr-4' size={25}></FaUserFriends><span className='text-lg'>Invite Friends</span></li>
+      <li className='flex py-4 items-center'><TbTruckDelivery className='mr-4' size={25}></TbTruckDelivery><span className='xxs:text-xl mediumEnd:text-lg lg:text-lg'>Orders</span> </li>
+      <li className='flex py-4 items-center'><AiFillHeart className='mr-4' size={25}></AiFillHeart><span className='xxs:text-xl mediumEnd:text-lg lg:text-lg'>Favorites</span></li>
+      <li className='flex py-4 items-center'><FaWallet className='mr-4' size={25}></FaWallet><span className='xxs:text-xl mediumEnd:text-lg lg:text-lg'>Wallet</span></li>
+      <li className='flex py-4 items-center'><AiFillQuestionCircle className='mr-4' size={25}></AiFillQuestionCircle><span className='xxs:text-xl mediumEnd:text-lg lg:text-lg'>Help</span></li>
+      <li className='flex py-4 items-center'><ImPriceTag className='mr-4' size={25}></ImPriceTag><span className='xxs:text-xl mediumEnd:text-lg lg:text-lg'>Promotions</span></li>
+      <li className='flex py-4 items-center'><FaUserFriends className='mr-4' size={25}></FaUserFriends><span className='xxs:text-xl mediumEnd:text-lg lg:text-lg'>Invite Friends</span></li>
     </ul>
     </div>
     </div>
