@@ -1,6 +1,9 @@
 import React from 'react'
-import {AiOutlineMenu, AiOutlineSearch,AiOutlineClose  } from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineSearch,AiOutlineClose,AiFillHeart,AiFillQuestionCircle  } from 'react-icons/ai'
 import {BsFillCartFill} from 'react-icons/bs'
+import {TbTruckDelivery} from 'react-icons/tb'
+import {FaWallet, FaUserFriends} from 'react-icons/fa'
+import {ImPriceTag} from 'react-icons/im'
 import { useState } from 'react'
 
 
@@ -49,8 +52,16 @@ const Navigation = () => {
 
     <h1 className='sm:text-3xl lg:text-xl absolute top-4 left-4'>Best <span className='font-bold'>Eats</span></h1>
     <AiOutlineClose className='absolute top-4 right-4 cursor-pointer' 
-    onClick={()=> setNav(!nav)}
-    size={30}></AiOutlineClose>
+                    onClick={()=> setNav(!nav)}  size={30}></AiOutlineClose>
+
+    <ul className='flex flex-col p-4 mt-[50px]'>
+      <li className='flex py-4 items-center'><TbTruckDelivery className='mr-4' size={25}></TbTruckDelivery><span className='text-lg'>Orders</span> </li>
+      <li className='flex py-4 items-center'><AiFillHeart className='mr-4' size={25}></AiFillHeart><span className='text-lg'>Favorites</span></li>
+      <li className='flex py-4 items-center'><FaWallet className='mr-4' size={25}></FaWallet><span className='text-lg'>Wallet</span></li>
+      <li className='flex py-4 items-center'><AiFillQuestionCircle className='mr-4' size={25}></AiFillQuestionCircle><span className='text-lg'>Help</span></li>
+      <li className='flex py-4 items-center'><ImPriceTag className='mr-4' size={25}></ImPriceTag><span className='text-lg'>Promotions</span></li>
+      <li className='flex py-4 items-center'><FaUserFriends className='mr-4' size={25}></FaUserFriends><span className='text-lg'>Invite Friends</span></li>
+    </ul>
     </div>
     </div>
   )
