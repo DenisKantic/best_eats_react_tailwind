@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      'xss': '360px',
+      'xss': '340px',
       'xs' : '430px',
       'medium': '460px',
       'mediumEnd': '639',
       ...defaultTheme.screens,
     },
   },
-  plugins: [],
+  plugins: [],  
 }
