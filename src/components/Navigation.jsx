@@ -20,12 +20,12 @@ const Navigation = () => {
 
         <AiOutlineMenu className='mr-2 cursor-pointer' size={25} onClick={()=> setNav(!nav)}></AiOutlineMenu>
         
-        <h1 className='sm:text-3xl lg:text-3xl flex'>Best <span className='font-bold'>Eats</span></h1>
+        <h1 className='xss:text-sm flex-col sm:text-2xl lg:text-3xl'>Best <span className='font-bold'>Eats</span></h1>
         
         {/* button wrapper */}
         <div className='ml-2 bg-gray-200 rounded-full p-1 text-sm cursor-pointer hidden sm:flex'>
-        <button className='bg-black text-white p-2 rounded-full  text-xl'>Delivery</button>
-        <button className='p-2 text-xl'>Pickup</button>
+        <button className='bg-black text-white p-2 rounded-full  text-l'>Delivery</button>
+        <button className='p-2 text-l'>Pickup</button>
         </div>
 
         </div>
@@ -35,13 +35,13 @@ const Navigation = () => {
                     xxs:w-[90%] xs:w-[250px] sm:w-[400px] lg:w-[50%]
                     medium:w-[90%] mediumEnd:w-[90%] mx-2'> 
             <AiOutlineSearch className='cursor-pointer ml-2' size={25}></AiOutlineSearch>
-            <input className='outline-none bg-transparent text-xl p-3 xxs:w-[100%] w-full' type="text" placeholder='Search here' />
+            <input className='outline-none bg-transparent p-2 xxs:w-[100%] text-md w-full sm:text-xl' type="text" placeholder='Search here' />
         </div>
 
         {/* cart button */}
-        <div className='flex items-center justify-center bg-black rounded-full py-2 text-white w-[50px] sm:w-[100px] cursor-pointer'> 
-            <BsFillCartFill size={22}></BsFillCartFill>
-            <button className='p-2 hidden text-xl sm:flex '>Cart</button>
+        <div className='flex items-center justify-center bg-black rounded-full py-2 text-white w-[50px] xss:hidden sm:w-[100px] md:flex cursor-pointer'> 
+            <BsFillCartFill size={20}></BsFillCartFill>
+            <button className='p-1 hidden text-xl sm:flex '>Cart</button>
         </div>
     {/* menu selection overlay */}
     <div className={ nav ? 'bg-black/80 w-full fixed h-screen z-10 top-0 left-0 duration-300' : 'fixed'}></div>
